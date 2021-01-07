@@ -15,12 +15,24 @@ class Person
         @first_name = f_name
         @last_name = l_name
         @email = email
+        @awake = true
     end
 
-    #behaviors
+    #_behaviors_
+    #instance methods (can have any name)
     #greetings
+    def greetings
+        return "Hello!"
+    end
     #sleep
+    def sleep
+        @awake = false
+    end
     #awake
+    def awake
+        @awake = true
+    end
+
 end
 
 
@@ -33,6 +45,27 @@ end
 me = Person.new("Basha","Mahn","basham@gmail.com")
 you = Person.new("Elvis","Peter", "elvisp@gmail.com")
 
+# you can change the state with behavior
+
 
 p me
+p "------------------"
+me.sleep
+p"=================="
+p me
+p"==================="
+p me.awake
+
 p you
+
+# @ = instint variable
+
+
+
+
+
+
+
+
+
+
