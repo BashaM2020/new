@@ -1,16 +1,17 @@
-# always start ur class with a capital
+# always start ur class' name with a capital
 # a class should have the states and behaviors of its objects
 
 class Person
-    #_state_
+#   *********STATE**********
     #first_name
     #last_name
     #email
     #boolean values don't need an argument
     #u can have states that are nil
-    #constuctor= this method invoks objects
-    # @ = insistance/charachteristic variable (it defines them)
-    # initializing the values to the variables
+    #constuctor (method called "initialize") = it invoks the objects
+    # @ = insistance/charachteristic/states are named as variable 
+    #     (the @state variables define the objects)
+    # initializing the arguments to the state variables
     def initialize(f_name, l_name, email)
         @first_name = f_name
         @last_name = l_name
@@ -18,8 +19,12 @@ class Person
         @awake = true
     end
 
-    #_behaviors_
-    #instance methods (can have any name)
+    #   BEHAVIORS (greetings, sleep, awake)
+    # instance methods- methods that define your state 
+    # through its behavior (can have any name)
+    # these methods are defined by the object's behavior 
+    # to access its state charachteristics
+    
     #greetings
     def greetings
         return "Hello!"
