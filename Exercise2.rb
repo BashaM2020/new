@@ -16,7 +16,6 @@ class Cat
     return "My name is #{@name} and I eat #{@preferred_food} at #{@meal_time}."
     end
 
-    
 
 end  
 
