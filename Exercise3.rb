@@ -2,7 +2,7 @@
 
 class Player 
 
-    def initialize(coins, points, lives) 
+    def initialize 
         @gold_coins = 0
         @health_points = 10
         @lives = 5
@@ -14,10 +14,19 @@ class Player
 
     def collect_treasure
         @gold_coins += 1
+        if @gold_coins % 10 == 0
+            level_up
+        end 
     end 
 
     def do_battle(damage)
         @health_points -= damage
+        if @health_points < 1 && @lives > 0
+            @lives -= 1
+            @health_points = 10
+        else 
+            restart 
+        end 
     end
 
     def restart
@@ -28,6 +37,5 @@ class Player
 
 end
 
-user_one = Player.new("a","b","c")
+user_one = Player.new
 
-p user_one

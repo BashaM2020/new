@@ -33,11 +33,10 @@ class Pizza
 
 end
 
-
 pizza1 = Pizza.new(['Cheese','peppers']) 
 
 # pizza1.bake 
-p pizza1 
+# p pizza1 
 
 # 5.times do
 #     pizza1.cut 
@@ -52,70 +51,3 @@ p pizza1
 # puts pizza1.inspect 
 
 # puts pizza1.inspect 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
